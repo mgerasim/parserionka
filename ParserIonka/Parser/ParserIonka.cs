@@ -14,20 +14,20 @@ namespace ParserIonka.Parser
 
         }
 
-        public static int Ionka_Group05_HH(string strSession)
-        {
-            string[] arrayTokens = strSession.Split(' ');
-            string token = arrayTokens[0];
-            int HH = Convert.ToInt32(token.Substring(1, 2));
-            return HH;
-        }
-
         public static int Ionka_Group05_MM(string strSession)
         {
             string[] arrayTokens = strSession.Split(' ');
             string token = arrayTokens[0];
-            int MM = Convert.ToInt32(token.Substring(3, 2));
+            int MM = Convert.ToInt32(token.Substring(1, 2));
             return MM;
+        }
+
+        public static int Ionka_Group05_DD(string strSession)
+        {
+            string[] arrayTokens = strSession.Split(' ');
+            string token = arrayTokens[0];
+            int DD = Convert.ToInt32(token.Substring(3, 2));
+            return DD;
         }
 
         public static int Ionka_Group06_f0F2(string strSession)
